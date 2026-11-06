@@ -1,3 +1,6 @@
+## Companion manuscript
+This repository accompanies "Leakage-aware evaluation of packet-level intrusion detection on LSNM2024" (submitted to Jurnal RESTI). Push this repository to your own remote and put the resulting URL in Section 2.4 of the manuscript in place of the placeholder.
+
 # Supplementary material: leakage-aware evaluation of packet-level intrusion detection on LSNM2024
 
 ## Data
