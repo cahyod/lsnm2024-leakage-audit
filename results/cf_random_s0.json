@@ -1,0 +1,52 @@
+{
+ "protocol": "random",
+ "seed": 0,
+ "models": {
+  "xgb": {
+   "acc": 0.8183611111111111,
+   "bal_acc": 0.8183611111111111,
+   "f1_macro": 0.8209746698126514,
+   "f1_weighted": 0.8209746698126514,
+   "n_test_classes": 16,
+   "train_time_s": 314.86
+  },
+  "hybrid_cf": {
+   "acc": 0.8192222222222222,
+   "bal_acc": 0.8192222222222223,
+   "f1_macro": 0.8214344077068302,
+   "f1_weighted": 0.8214344077068302,
+   "n_test_classes": 16,
+   "train_time_s": 500.48
+  }
+ },
+ "seen_unseen": {
+  "xgb": {
+   "acc_seen": 0.8432611037076252,
+   "acc_unseen": 0.7391556820161431
+  },
+  "hybrid_cf": {
+   "acc_seen": 0.8469851585461582,
+   "acc_unseen": 0.7309099355438128
+  }
+ },
+ "mcnemar_hybridcf_vs_xgb": {
+  "a_only": 761,
+  "b_only": 699,
+  "p": 0.11035844635830748
+ },
+ "shap_mean_abs": {
+  "Length": 0.7871202230453491,
+  "IP Length": 0.5379064083099365,
+  "IP TTL": 0.07853719592094421,
+  "TCP Length": 0.5946321487426758,
+  "TCP Window Size": 1.2952685356140137,
+  "UDP Length": 0.048582401126623154,
+  "ICMP Type": 0.05542387813329697,
+  "TCP Destination Port": 1.0505691766738892,
+  "has_ip": 0.17707057297229767,
+  "has_tcp": 0.34767577052116394,
+  "has_udp": 0.47792375087738037,
+  "has_icmp": 0.7942204475402832
+ },
+ "elapsed_s": 830.4
+}

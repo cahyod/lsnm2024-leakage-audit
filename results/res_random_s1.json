@@ -1,0 +1,233 @@
+{
+ "protocol": "random",
+ "seed": 1,
+ "n_train": 168000,
+ "n_test": 72000,
+ "train_per_class": [
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500,
+  10500
+ ],
+ "test_per_class": [
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500,
+  4500
+ ],
+ "test_seen_frac": 0.7622777777777778,
+ "pool_test_seen_frac": 0.9221909581042899,
+ "models": {
+  "memoriser": {
+   "acc": 0.6726666666666666,
+   "bal_acc": 0.6726666666666666,
+   "f1_macro": 0.7007608387542641,
+   "f1_weighted": 0.7007608387542641,
+   "n_test_classes": 16,
+   "train_time_s": 7.22
+  },
+  "logreg": {
+   "acc": 0.5190972222222222,
+   "bal_acc": 0.5190972222222222,
+   "f1_macro": 0.5021041372698083,
+   "f1_weighted": 0.5021041372698083,
+   "n_test_classes": 16,
+   "train_time_s": 35.35
+  },
+  "rf": {
+   "acc": 0.8072916666666666,
+   "bal_acc": 0.8072916666666667,
+   "f1_macro": 0.808487994543714,
+   "f1_weighted": 0.808487994543714,
+   "n_test_classes": 16,
+   "train_time_s": 14.18
+  },
+  "mlp": {
+   "acc": 0.7385277777777778,
+   "bal_acc": 0.7385277777777778,
+   "f1_macro": 0.7417998925175281,
+   "f1_weighted": 0.7417998925175281,
+   "n_test_classes": 16,
+   "train_time_s": 157.04
+  },
+  "xgb": {
+   "acc": 0.8166527777777778,
+   "bal_acc": 0.8166527777777778,
+   "f1_macro": 0.8199185024752735,
+   "f1_weighted": 0.8199185024752735,
+   "n_test_classes": 16,
+   "train_time_s": 48.56
+  },
+  "hybrid": {
+   "acc": 0.8177222222222222,
+   "bal_acc": 0.8177222222222222,
+   "f1_macro": 0.8199814807530825,
+   "f1_weighted": 0.8199814807530825,
+   "n_test_classes": 16,
+   "train_time_s": 236.69
+  },
+  "xgb_noport": {
+   "acc": 0.7429722222222223,
+   "bal_acc": 0.7429722222222221,
+   "f1_macro": 0.7489882223330856,
+   "f1_weighted": 0.7489882223330856,
+   "n_test_classes": 16,
+   "train_time_s": 45.28
+  }
+ },
+ "seen_unseen": {
+  "memoriser": {
+   "acc_seen": 0.844781721448874,
+   "acc_unseen": 0.12076419724234634
+  },
+  "xgb": {
+   "acc_seen": 0.8400080169083886,
+   "acc_unseen": 0.741762093947184
+  },
+  "hybrid": {
+   "acc_seen": 0.8445266380001457,
+   "acc_unseen": 0.7317714419256836
+  },
+  "rf": {
+   "acc_seen": 0.8450732453902777,
+   "acc_unseen": 0.6861416218742696
+  }
+ },
+ "mcnemar_hybrid_vs_xgb": {
+  "a_only": 835,
+  "b_only": 758,
+  "p": 0.05685398970057769
+ },
+ "mcnemar_rf_vs_xgb": {
+  "a_only": 1773,
+  "b_only": 2447,
+  "p": 2.9964721807404526e-25
+ },
+ "classwise_xgb": {
+  "ARP_Spoofing": 0.9930379047408553,
+  "Benign": 0.6375392341494036,
+  "DDoS_ICMP": 0.9957936683639583,
+  "DDoS_RAW": 1.0,
+  "DDoS_UDP": 0.9976720984369803,
+  "DOS": 0.6735664335664335,
+  "FTP_BruteForce": 0.820647419072616,
+  "FTP_Exploit": 0.8877748661273783,
+  "Fuzzing": 0.9300067735380447,
+  "ICMP_Flood": 0.9959839357429718,
+  "Port_Scanning": 0.9573309123921925,
+  "RCE": 0.5070291623097479,
+  "SQL_Injection": 0.377582065652522,
+  "SSH_BruteForce": 0.9105084745762712,
+  "SYN_Flood": 0.9396358990737783,
+  "XSS": 0.4945871918612234
+ },
+ "classwise_recall_xgb": {
+  "ARP_Spoofing": 0.9984444444444445,
+  "Benign": 0.5642222222222222,
+  "DDoS_ICMP": 0.9995555555555555,
+  "DDoS_RAW": 1.0,
+  "DDoS_UDP": 1.0,
+  "DOS": 0.5351111111111111,
+  "FTP_BruteForce": 0.7295555555555555,
+  "FTP_Exploit": 0.8657777777777778,
+  "Fuzzing": 0.9153333333333333,
+  "ICMP_Flood": 0.992,
+  "Port_Scanning": 0.9373333333333334,
+  "RCE": 0.9697777777777777,
+  "SQL_Injection": 0.262,
+  "SSH_BruteForce": 0.8953333333333333,
+  "SYN_Flood": 0.9806666666666667,
+  "XSS": 0.42133333333333334
+ },
+ "shap_mean_abs": {
+  "Length": 0.8720689415931702,
+  "IP Length": 0.5583459734916687,
+  "IP TTL": 0.07860506325960159,
+  "TCP Length": 0.6070021390914917,
+  "TCP Window Size": 1.2851313352584839,
+  "UDP Length": 0.04829216003417969,
+  "ICMP Type": 0.06115620210766792,
+  "TCP Destination Port": 1.0446516275405884,
+  "has_ip": 0.15655338764190674,
+  "has_tcp": 0.3160514235496521,
+  "has_udp": 0.4686163365840912,
+  "has_icmp": 0.8093315362930298
+ },
+ "boruta": {
+  "Length": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "IP Length": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "IP TTL": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "TCP Length": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "TCP Window Size": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "UDP Length": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "ICMP Type": {
+   "confirmed": true,
+   "rank": 1
+  },
+  "TCP Destination Port": {
+   "confirmed": true,
+   "rank": 1
+  }
+ },
+ "classes": [
+  "ARP_Spoofing",
+  "Benign",
+  "DDoS_ICMP",
+  "DDoS_RAW",
+  "DDoS_UDP",
+  "DOS",
+  "FTP_BruteForce",
+  "FTP_Exploit",
+  "Fuzzing",
+  "ICMP_Flood",
+  "Port_Scanning",
+  "RCE",
+  "SQL_Injection",
+  "SSH_BruteForce",
+  "SYN_Flood",
+  "XSS"
+ ],
+ "elapsed_s": 567.1
+}

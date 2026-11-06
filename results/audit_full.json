@@ -1,0 +1,355 @@
+{
+ "class_counts": {
+  "Benign": 1259470,
+  "DOS": 369288,
+  "DDoS_RAW": 326485,
+  "DDoS_UDP": 318209,
+  "SQL_Injection": 287725,
+  "RCE": 278873,
+  "ICMP_Flood": 240082,
+  "XSS": 217591,
+  "FTP_Exploit": 207803,
+  "DDoS_ICMP": 199991,
+  "SYN_Flood": 199949,
+  "Port_Scanning": 162319,
+  "SSH_BruteForce": 139762,
+  "FTP_BruteForce": 121916,
+  "Fuzzing": 117558,
+  "ARP_Spoofing": 96895
+ },
+ "protocol_composition": {
+  "ARP_Spoofing": {
+   "top": {
+    "ARP": 0.999,
+    "TCP": 0.0004,
+    "ICMP": 0.0002,
+    "DHCP": 0.0001,
+    "DNS": 0.0001
+   },
+   "housekeeping_share": 0.0003
+  },
+  "Benign": {
+   "top": {
+    "TCP": 0.7686,
+    "HTTP": 0.2247,
+    "DNS": 0.0057,
+    "ARP": 0.0008,
+    "NBNS": 0.0001
+   },
+   "housekeeping_share": 0.0067
+  },
+  "DDoS_ICMP": {
+   "top": {
+    "ICMP": 0.9999,
+    "ARP": 0.0001,
+    "AJP13": 0.0,
+    "ALLJOYN-NS": 0.0,
+    "AMS": 0.0
+   },
+   "housekeeping_share": 0.0001
+  },
+  "DDoS_RAW": {
+   "top": {
+    "TCP": 1.0,
+    "ARP": 0.0,
+    "ICMPv6": 0.0,
+    "MDNS": 0.0,
+    "NTP": 0.0
+   },
+   "housekeeping_share": 0.0
+  },
+  "DDoS_UDP": {
+   "top": {
+    "UDP": 0.5227,
+    "ICMP": 0.4773,
+    "AJP13": 0.0,
+    "ALLJOYN-NS": 0.0,
+    "AMS": 0.0
+   },
+   "housekeeping_share": 0.0
+  },
+  "DOS": {
+   "top": {
+    "TCP": 0.6299,
+    "ICMP": 0.2497,
+    "HTTP": 0.12,
+    "DNS": 0.0001,
+    "QUIC": 0.0001
+   },
+   "housekeeping_share": 0.0002
+  },
+  "FTP_BruteForce": {
+   "top": {
+    "TCP": 0.9162,
+    "DNS": 0.0553,
+    "FTP": 0.0241,
+    "ICMPv6": 0.0015,
+    "ARP": 0.001
+   },
+   "housekeeping_share": 0.0586
+  },
+  "FTP_Exploit": {
+   "top": {
+    "TCP": 0.8714,
+    "FTP": 0.1234,
+    "DNS": 0.0017,
+    "HTTP": 0.0007,
+    "MySQL": 0.0003
+   },
+   "housekeeping_share": 0.0021
+  },
+  "Fuzzing": {
+   "top": {
+    "HTTP": 0.7455,
+    "TCP": 0.2544,
+    "BROWSER": 0.0,
+    "AJP13": 0.0,
+    "ALLJOYN-NS": 0.0
+   },
+   "housekeeping_share": 0.0
+  },
+  "ICMP_Flood": {
+   "top": {
+    "ICMP": 1.0,
+    "ARP": 0.0,
+    "AJP13": 0.0,
+    "ALLJOYN-NS": 0.0,
+    "AMS": 0.0
+   },
+   "housekeeping_share": 0.0
+  },
+  "Port_Scanning": {
+   "top": {
+    "TCP": 0.9655,
+    "UDP": 0.0114,
+    "ICMP": 0.0088,
+    "TFTP": 0.0035,
+    "HTTP": 0.0023
+   },
+   "housekeeping_share": 0.0021
+  },
+  "RCE": {
+   "top": {
+    "TCP": 0.803,
+    "HTTP": 0.196,
+    "DNS": 0.0003,
+    "Rlogin": 0.0003,
+    "Portmap": 0.0001
+   },
+   "housekeeping_share": 0.0003
+  },
+  "SQL_Injection": {
+   "top": {
+    "TCP": 0.8139,
+    "HTTP": 0.1668,
+    "DNS": 0.0166,
+    "TLSv1.3": 0.0016,
+    "QUIC": 0.0008
+   },
+   "housekeeping_share": 0.0169
+  },
+  "SSH_BruteForce": {
+   "top": {
+    "TCP": 0.4852,
+    "SSHv2": 0.436,
+    "DNS": 0.0676,
+    "ARP": 0.0088,
+    "HTTP": 0.0008
+   },
+   "housekeeping_share": 0.0774
+  },
+  "SYN_Flood": {
+   "top": {
+    "TCP": 0.9977,
+    "X11": 0.0005,
+    "TPKT": 0.0003,
+    "BitTorrent": 0.0001,
+    "TPM": 0.0001
+   },
+   "housekeeping_share": 0.0001
+  },
+  "XSS": {
+   "top": {
+    "TCP": 0.8062,
+    "HTTP": 0.1891,
+    "DNS": 0.0036,
+    "TLSv1.3": 0.0004,
+    "ARP": 0.0002
+   },
+   "housekeeping_share": 0.0039
+  }
+ },
+ "top_ip_sources": {
+  "ARP_Spoofing": {
+   "nan": 0.999,
+   "192.168.1.109": 0.0,
+   "192.168.1.107": 0.0,
+   "192.168.1.104": 0.0
+  },
+  "Benign": {
+   "192.168.1.108": 0.506,
+   "192.168.1.104": 0.384,
+   "192.168.1.109": 0.104,
+   "192.168.1.107": 0.004
+  },
+  "DDoS_ICMP": {
+   "192.168.1.104": 0.5,
+   "192.168.1.108": 0.5,
+   "nan": 0.0,
+   "0.0.110.202": 0.0
+  },
+  "DDoS_RAW": {
+   "192.168.1.108": 1.0,
+   "nan": 0.0,
+   "192.168.1.107": 0.0,
+   "185.125.190.56": 0.0
+  },
+  "DDoS_UDP": {
+   "0.107.110.138": 0.0,
+   "0.147.35.101": 0.0,
+   "103.159.218.234": 0.0,
+   "107.167.224.228": 0.0
+  },
+  "DOS": {
+   "192.168.1.108": 0.594,
+   "192.168.1.104": 0.405,
+   "192.168.1.107": 0.0,
+   "172.217.16.131": 0.0
+  },
+  "FTP_BruteForce": {
+   "192.168.1.108": 0.551,
+   "192.168.1.109": 0.417,
+   "192.168.1.1": 0.028,
+   "nan": 0.003
+  },
+  "FTP_Exploit": {
+   "192.168.1.108": 0.51,
+   "192.168.1.109": 0.49,
+   "192.168.1.109,192.168.1.108": 0.0,
+   "192.168.1.104": 0.0
+  },
+  "Fuzzing": {
+   "192.168.1.109": 0.582,
+   "192.168.1.108": 0.418,
+   "0.0.110.202": 0.0,
+   "0.0.111.158": 0.0
+  },
+  "ICMP_Flood": {
+   "192.168.1.108": 0.632,
+   "192.168.1.104": 0.368,
+   "nan": 0.0,
+   "0.0.110.202": 0.0
+  },
+  "Port_Scanning": {
+   "185.125.190.39": 0.439,
+   "192.168.1.107": 0.297,
+   "192.168.1.108": 0.124,
+   "192.168.1.104": 0.103
+  },
+  "RCE": {
+   "192.168.1.108": 0.598,
+   "192.168.1.109": 0.402,
+   "0.0.110.202": 0.0,
+   "0.0.111.158": 0.0
+  },
+  "SQL_Injection": {
+   "192.168.1.108": 0.528,
+   "192.168.1.109": 0.431,
+   "192.168.1.104": 0.03,
+   "192.168.1.1": 0.008
+  },
+  "SSH_BruteForce": {
+   "192.168.1.109": 0.499,
+   "192.168.1.108": 0.447,
+   "192.168.1.1": 0.034,
+   "192.168.1.107": 0.009
+  },
+  "SYN_Flood": {
+   "192.168.1.104": 0.5,
+   "192.168.1.108": 0.5,
+   "nan": 0.0,
+   "0.0.110.202": 0.0
+  },
+  "XSS": {
+   "192.168.1.108": 0.508,
+   "192.168.1.104": 0.489,
+   "192.168.1.1": 0.002,
+   "216.58.212.131": 0.0
+  }
+ },
+ "n_rows": 4543916,
+ "n_unique_fp": 493008,
+ "dup_rows_keepfalse_pct": 93.28,
+ "redundant_rows_pct": 89.15,
+ "unique_fp_per_class": {
+  "ARP_Spoofing": 42,
+  "Benign": 140661,
+  "DDoS_ICMP": 11,
+  "DDoS_RAW": 53,
+  "DDoS_UDP": 2,
+  "DOS": 72840,
+  "FTP_BruteForce": 23503,
+  "FTP_Exploit": 87301,
+  "Fuzzing": 25672,
+  "ICMP_Flood": 1760,
+  "Port_Scanning": 8803,
+  "RCE": 54592,
+  "SQL_Injection": 66587,
+  "SSH_BruteForce": 38340,
+  "SYN_Flood": 46767,
+  "XSS": 48455
+ },
+ "n_conflict_fp": 60383,
+ "rows_in_conflict_fp_pct": 51.18,
+ "rows_in_conflict_fp_pct_by_class": {
+  "ARP_Spoofing": 0.9995,
+  "Benign": 0.561,
+  "DDoS_ICMP": 0.0785,
+  "DDoS_RAW": 0.0,
+  "DDoS_UDP": 1.0,
+  "DOS": 0.6316,
+  "FTP_BruteForce": 0.6335,
+  "FTP_Exploit": 0.5924,
+  "Fuzzing": 0.165,
+  "ICMP_Flood": 0.0004,
+  "Port_Scanning": 0.1479,
+  "RCE": 0.8099,
+  "SQL_Injection": 0.8259,
+  "SSH_BruteForce": 0.336,
+  "SYN_Flood": 0.0468,
+  "XSS": 0.8788
+ },
+ "balanced_acc_ceiling": 0.8546,
+ "ceiling_recall_by_class": {
+  "Benign": 0.5911,
+  "DOS": 0.5373,
+  "DDoS_RAW": 1.0,
+  "DDoS_UDP": 1.0,
+  "SQL_Injection": 0.4059,
+  "RCE": 0.911,
+  "ICMP_Flood": 0.9996,
+  "XSS": 0.5311,
+  "FTP_Exploit": 0.9523,
+  "DDoS_ICMP": 0.9999,
+  "SYN_Flood": 0.9732,
+  "Port_Scanning": 0.9783,
+  "SSH_BruteForce": 0.9687,
+  "FTP_BruteForce": 0.876,
+  "Fuzzing": 0.9491,
+  "ARP_Spoofing": 0.9995
+ },
+ "natural_acc_ceiling": 0.8404,
+ "balanced_ceiling_only_TCP Destination Port": 0.4863,
+ "balanced_ceiling_only_IP TTL": 0.2136,
+ "balanced_ceiling_only_Length": 0.5383,
+ "missing_pct": {
+  "Length": 0.0,
+  "IP Length": 5.57,
+  "IP TTL": 5.57,
+  "TCP Length": 21.67,
+  "TCP Window Size": 21.67,
+  "UDP Length": 92.23,
+  "ICMP Type": 84.91,
+  "TCP Destination Port": 21.67
+ }
+}
